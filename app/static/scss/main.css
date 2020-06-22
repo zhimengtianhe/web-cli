@@ -1,0 +1,453 @@
+@charset "UTF-8";
+/* *********PC端********** */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  margin: 0;
+  padding: 0; }
+
+ul, ol {
+  list-style: none; }
+
+li {
+  list-style-type: none; }
+
+body {
+  font: 14px/1.5 "微软雅黑", "宋体", arial;
+  width: 100%;
+  color: #333;
+  overflow-x: hidden;
+  background-color: #f9f9f9;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f9f9f9; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+/* 清除点击出现虚拟框 */
+a {
+  -webkit-tap-highlight-color: transparent; }
+  a:focus {
+    outline: 0; }
+  a:link, a:visited {
+    color: #333;
+    text-decoration: none; }
+
+a img {
+  border: none; }
+
+input, textarea, select {
+  outline: none;
+  font: 12px/1.5 "微软雅黑", "宋体", arial; }
+
+fieldset, img {
+  border: 0; }
+
+abbr, acronym {
+  border: 0;
+  font-variant: normal; }
+
+caption, th {
+  text-align: left; }
+
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+/* 统一上标和下标 */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+ins, a {
+  text-decoration: none;
+  cursor: pointer;
+  outline: medium none; }
+
+/* 清除浮动 */
+.clearfix, .layout {
+  *zoom: 1; }
+  .clearfix:after, .layout:after {
+    display: block;
+    content: "\200B";
+    clear: both;
+    height: 0; }
+
+.layout {
+  width: 970px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+.fn-fl {
+  float: left; }
+
+.fn-tc {
+  text-align: center; }
+
+.fn-tl {
+  text-align: left; }
+
+.fn-tr {
+  text-align: right; }
+
+.fn-fr {
+  float: right; }
+
+.mt10 {
+  margin-top: 10px; }
+
+.mt20 {
+  margin-top: 20px; }
+
+.ml20 {
+  margin-left: 20px; }
+
+.mt30 {
+  margin-top: 30px; }
+
+.mt40 {
+  margin-top: 40px; }
+
+.fn-rmb {
+  font-family: arial;
+  font-style: normal;
+  padding-right: 4px; }
+
+/*zx  2017/3/13*/
+/* 单行文字溢出时出现省略号，需设定宽度 */
+.fn_text_overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+/*按钮样式*/
+.btn_status_false {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  -moz-border-radius: 20px;
+  -khtml-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  background: #ff9c00;
+  font-size: 18px; }
+  .btn_status_false span {
+    color: #fff; }
+
+.btn_status_true {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  -moz-border-radius: 20px;
+  -khtml-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  background: #ccc;
+  font-size: 18px;
+  cursor: default; }
+  .btn_status_true span {
+    color: #fff; }
+
+.btn {
+  display: inline-block;
+  text-align: center; }
+
+i {
+  display: inline-block;
+  background-image: url(../images/sprite.png);
+  vertical-align: middle; }
+
+/*zh 2016 0310*/
+.topbar {
+  font-size: 12px;
+  line-height: 30px;
+  background-color: #4e4e4e;
+  color: #cccccc; }
+  .topbar .layout .bar_left {
+    float: left; }
+    .topbar .layout .bar_left ul li {
+      float: left;
+      position: relative; }
+      .topbar .layout .bar_left ul li div {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        height: 160px;
+        padding: 10px;
+        left: -55px;
+        z-index: 99;
+        border: 1px solid #f49128; }
+        .topbar .layout .bar_left ul li div img {
+          width: 150px;
+          height: 150px; }
+        .topbar .layout .bar_left ul li div p {
+          line-height: 12px;
+          margin-top: -10px;
+          color: #000;
+          text-align: center; }
+    .topbar .layout .bar_left ul .WeChat i {
+      width: 18px;
+      height: 15px;
+      margin: -3px 0 0 22px;
+      cursor: pointer;
+      background-position: 0 0; }
+    .topbar .layout .bar_left ul .weibo i {
+      width: 19px;
+      height: 14px;
+      margin: 0px 0 0 20px;
+      cursor: pointer;
+      background-position: -18px 0; }
+  .topbar .layout .bar_right {
+    float: right;
+    color: #fff; }
+    .topbar .layout .bar_right a {
+      color: #fff;
+      margin: 0 4px; }
+
+.nav {
+  height: 64px;
+  background-color: #fff;
+  border-bottom: 1px solid #ff9c00; }
+  .nav .nav_left {
+    float: left;
+    height: 64px; }
+    .nav .nav_left .logo {
+      display: inline-block;
+      width: 290px;
+      height: 64px; }
+  .nav .nav_right {
+    float: right;
+    line-height: 64px; }
+    .nav .nav_right li {
+      float: left;
+      text-align: right;
+      padding: 0 25px;
+      height: 64px; }
+      .nav .nav_right li a {
+        font-size: 16px; }
+        .nav .nav_right li a:hover {
+          color: #ff9c00; }
+      .nav .nav_right li a.active {
+        color: #ff9c00; }
+    .nav .nav_right .myaccount {
+      position: relative;
+      margin-right: -20px;
+      line-height: 0; }
+      .nav .nav_right .myaccount a {
+        display: inline-block;
+        width: 78px;
+        height: 22px;
+        line-height: 22px;
+        text-align: center;
+        border: 1px solid #f43500;
+        -webkit-border-radius: 11px;
+        -moz-border-radius: 11px;
+        -o-border-radius: 11px;
+        border-radius: 11px;
+        color: #f43500;
+        margin-top: 20px; }
+        .nav .nav_right .myaccount a:hover {
+          color: #f43500; }
+      .nav .nav_right .myaccount ul {
+        position: absolute;
+        z-index: 999;
+        top: 50px;
+        right: 0;
+        display: none; }
+        .nav .nav_right .myaccount ul li {
+          padding: 0;
+          float: none;
+          text-align: center;
+          background-color: #fff; }
+          .nav .nav_right .myaccount ul li a {
+            display: block;
+            width: 100px;
+            height: 40px;
+            line-height: 40px; }
+          .nav .nav_right .myaccount ul li:hover {
+            background-color: red; }
+      .nav .nav_right .myaccount:hover ul {
+        display: block; }
+
+/*二级菜单样式*/
+.Shead {
+  width: 100%; }
+  .Shead .nav_block {
+    width: 100%;
+    height: 52px;
+    background: #f3f3f3; }
+
+.nav_list {
+  height: 52px; }
+  .nav_list li {
+    width: 125px;
+    height: 52px;
+    float: left;
+    text-align: left; }
+    .nav_list li a {
+      display: inline-block;
+      width: 125px;
+      height: 52px;
+      font-size: 14px;
+      color: #727272;
+      line-height: 52px; }
+  .nav_list li.active a, .nav_list li:hover a {
+    color: #ff9c00; }
+
+.nav_none {
+  width: 100%;
+  height: 52px;
+  border-bottom: 1px solid #ff9c00; }
+  .nav_none li {
+    position: relative; }
+  .nav_none .triangle {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-position: -317px -21px;
+    position: absolute;
+    bottom: -2px;
+    left: 22px;
+    display: none; }
+
+.nav_list2 {
+  height: 52px;
+  display: none; }
+  .nav_list2 li {
+    float: left;
+    width: 125px;
+    height: 52px;
+    text-align: left;
+    line-height: 52px; }
+    .nav_list2 li a {
+      display: inline-block;
+      width: 125px;
+      height: 52px;
+      color: #b6b6b6; }
+  .nav_list2 li:hover a, .nav_list2 li.active a {
+    color: #696969; }
+  .nav_list2 li:hover .triangle, .nav_list2 li.active .triangle {
+    display: block; }
+
+/*zh 2016 0310*/
+.footer {
+  background-color: #4e4e4e;
+  padding: 20px 0 15px; }
+  .footer .footer_link {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #9c9b9b; }
+    .footer .footer_link ul {
+      float: left; }
+      .footer .footer_link ul li {
+        font-size: 12px;
+        color: #999999; }
+        .footer .footer_link ul li:first-child {
+          font-size: 14px;
+          color: #fff;
+          margin-bottom: 18px; }
+        .footer .footer_link ul li a {
+          color: #999999; }
+    .footer .footer_link .footer_col_1, .footer .footer_link .footer_col_2 {
+      width: 160px; }
+    .footer .footer_link .footer_col_3 {
+      width: 244px; }
+    .footer .footer_link .footer_col_4 {
+      width: 250px; }
+    .footer .footer_link .footer_col_5 {
+      float: right; }
+      .footer .footer_link .footer_col_5 p {
+        font-size: 12px;
+        color: #999999;
+        text-align: center; }
+      .footer .footer_link .footer_col_5 img {
+        width: 150px;
+        height: 150px; }
+  .footer .footer_bar {
+    margin-top: 20px; }
+    .footer .footer_bar p {
+      font-size: 12px;
+      color: #999999;
+      text-align: center; }
+
+.nav_sidebar_right {
+  position: fixed;
+  right: 50%;
+  bottom: 2%;
+  margin-right: -580px; }
+  .nav_sidebar_right li {
+    margin-bottom: 5px; }
+    .nav_sidebar_right li:first-child .nologin, .nav_sidebar_right li:first-child .login {
+      position: absolute;
+      display: none;
+      top: -58px;
+      right: -35px;
+      z-index: 80;
+      border: 1px solid #ff9c00;
+      background-color: #fff;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      -o-border-radius: 8px;
+      border-radius: 8px; }
+      .nav_sidebar_right li:first-child .nologin .arrow_pic, .nav_sidebar_right li:first-child .login .arrow_pic {
+        position: absolute;
+        top: 25px;
+        right: 50px;
+        width: 15px;
+        height: 15px;
+        background-position: -56px -72px; }
+      .nav_sidebar_right li:first-child .nologin .check_tit, .nav_sidebar_right li:first-child .login .check_tit {
+        text-align: center;
+        width: 120px;
+        height: 26px;
+        line-height: 26px;
+        font-size: 12px; }
+    .nav_sidebar_right li a {
+      display: inline-block;
+      width: 45px;
+      height: 45px;
+      background-image: url(../images/sprite.png);
+      vertical-align: middle; }
+    .nav_sidebar_right li .nockeckin {
+      background-position: 0 -118px; }
+      .nav_sidebar_right li .nockeckin:hover .nologin {
+        display: block; }
+    .nav_sidebar_right li .ckeckinon {
+      background-position: -45px -118px; }
+      .nav_sidebar_right li .ckeckinon:hover .login {
+        display: block; }
+    .nav_sidebar_right li .xiaoman {
+      background-position: 0 -168px;
+      position: relative; }
+      .nav_sidebar_right li .xiaoman img {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        right: 50px;
+        top: -28px;
+        display: none; }
+      .nav_sidebar_right li .xiaoman:hover {
+        background-position: -45px -168px; }
+        .nav_sidebar_right li .xiaoman:hover img {
+          display: block; }
+    .nav_sidebar_right li .focusus {
+      background-position: 0 -218px; }
+      .nav_sidebar_right li .focusus:hover {
+        background-position: -45px -218px; }
+    .nav_sidebar_right li .contact {
+      background-position: 0 -268px; }
+      .nav_sidebar_right li .contact:hover {
+        background-position: -45px -268px; }
+    .nav_sidebar_right li .backtop {
+      background-position: 0 -318px; }
+      .nav_sidebar_right li .backtop:hover {
+        background-position: -45px -318px; }
