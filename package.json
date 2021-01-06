@@ -35,7 +35,7 @@
     "jshint": "^2.9.3"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "cheerio": "^1.0.0-rc.1",
     "del": "^2.2.2",
     "gulp-cheerio": "^0.6.2",
